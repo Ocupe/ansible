@@ -491,7 +491,7 @@ PowerShell commands to enable TLS 1.2:
 
 .. code-block:: guess
 
-    $reg_path = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProvider\SCHANNEL\Protocols\TLS 1.2"
+    $reg_path = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
     New-Item -Path $reg_path
     New-Item -Path "$reg_path\Server"
     New-Item -Path "$reg_path\Client"
